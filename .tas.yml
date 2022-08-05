@@ -1,15 +1,11 @@
 ---
 framework: mocha
 tier: medium
-blocklist:
-  - "test/options.spec.ts##options##cwd##"
-  - "./test/options.spec.ts##options##output##should work"
-  - "./test/target.spec.ts##Targets##should stringify and toString"
-  - "./test/dummy.spec.ts##dummy"
-  - "./test/new_test_suite.spec.ts##new suite 1##new-test-2##"
+
 postMerge:
   pattern: 
-    - "./test/**/*.spec.ts"
+    - "./test/**/*.spec.ts""
+
 preMerge:
   pattern:
     - "./test/**/*.spec.ts"
@@ -20,4 +16,4 @@ postRun:
      command:
         - node --version
 parallelism : 1
-version: 2.0.1
+version: 1.0.1
