@@ -12,6 +12,7 @@ preMerge:
 preRun:
      command:
         - npm ci
+        - echo $ENGLISHCODE
      env:
       ENGLISHCODE: ${{secrets.ENGLISHCODE}}
 postRun:
