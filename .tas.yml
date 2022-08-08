@@ -12,6 +12,8 @@ preMerge:
 preRun:
      command:
         - npm ci
+     env:
+      ENGLISHCODE: ${{secrets.ENGLISHCODE}}
 postRun:
      command:
         - node --version
